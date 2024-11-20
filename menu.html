@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LEGACY - IceCream Shop</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="./img/sweet-ice-cream-icon-cartoon-illustration-vector-removebg-preview.png" rel="icon">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* Extra styles for the cancel button */
+        .cancelbtn2 {
+        padding: 14px 20px;
+        background-color: #33211D;
+        color: #FFFBF2;
+        }
+
+        /* Extra styles for the signup button */
+        .signupbtn{
+            padding:14px 20px;
+            background-color: #DA9F5B;
+            color:#33211D
+        }
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn2, .signupbtn {
+        float: left;
+        width: 50%;
+        }
+
+        .cancelbtn2:hover, .signupbtn:hover{
+            opacity: 0.5;
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password]{
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #FFFBF2;
+          box-sizing: border-box;
+        }
+
+        
+        .buttondn{
+            background-color: #33211D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+                cursor: pointer;
+                width: 100%;
+        }
+
+        .cancelbtn:hover{
+            opacity: 0.5;
+        }
+        
+        .buttondn:hover{
+            opacity: 0.5;
+        }
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #DA9F5B;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #DA9F5B;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #FFFBF2;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #33211D;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn, .cancelbtn2, .signupbtn {
+             width: 100%;
+          }
+        }
+        </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="snow">
+        </div>
+    </div>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white" style="font-size: xx-large;" >Legacy</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link">Trang Chủ</a>
+                    <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
+                    <a href="service.html" class="nav-item nav-link">Dịch Vụ</a>
+                    <a href="menu.html" class="nav-item nav-link active">Sản Phẩm</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thêm</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="reservation.html" class="dropdown-item">Đặt Hàng</a>
+                            <a href="testimonial.html" class="dropdown-item">Đánh Giá</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
+                    <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="nav-item nav-link">Đăng Nhập</a>
+                    <a onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="nav-item nav-link">Đăng Ký</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-uppercase" style="color: #DA9F5B;">Sản Phẩm</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="">Trang Chủ</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Sản Phẩm</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Menu Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sản Phẩm Của Cửa Hàng</h4>
+                <h1 class="display-4">Giá Thành Hợp Lý</h1>
+                <h2 class="display-4">Xem Ngay</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mb-5"></h1>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/product-3.jpg" alt="">
+                            <h5 class="menu-price">15k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Vani Ốc Quế</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4> 
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/product-2.jpg" alt="">
+                            <h5 class="menu-price">25k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Vani-Socola-Sầu Riêng</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4> 
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/product-4.jpg" alt="">
+                            <h5 class="menu-price">25k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Vani Nho</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/product-5.jpg" alt="">
+                            <h5 class="menu-price">20k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Kem Dâu</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="mb-5"></h1>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                            <h5 class="menu-price">22k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Kem Viên</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4>                     
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                            <h5 class="menu-price">18k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Vani Kem Trứng</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4> 
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
+                            <h5 class="menu-price">18k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Vani Dâu</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3">
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/service-4.jpg" alt="">
+                            <h5 class="menu-price">20k</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Kem Sữa Chua Dâu-Socola</h4>
+                            <h4><button class="button buttonmenu" onclick="alert('Đặt Hàng Thành Công!')">Đặt Hàng</button></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Menu End -->
+
+    <div class="icon heart">
+        <svg style="width: 250px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-30 -5 180.88 115.41" style="enable-background:new 0 0 122.88 107.41" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M60.83,17.19C68.84,8.84,74.45,1.62,86.79,0.21c23.17-2.66,44.48,21.06,32.78,44.41 c-3.33,6.65-10.11,14.56-17.61,22.32c-8.23,8.52-17.34,16.87-23.72,23.2l-17.4,17.26L46.46,93.56C29.16,76.9,0.95,55.93,0.02,29.95 C-0.63,11.75,13.73,0.09,30.25,0.3C45.01,0.5,51.22,7.84,60.83,17.19L60.83,17.19L60.83,17.19z"/></g></svg>
+    </div>
+
+   <!-- Footer Start -->
+   <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Liên Hệ</h4>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>2/138 Long Thạnh, Long Hòa, Cần Giờ, TP.HCM</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+086 745 2771</p>
+            <p class="m-0"><i class="fa fa-envelope mr-2"></i>legacy.icecreamshop@gmail.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Theo dõi</h4>
+            <p>Các trang mạng xã hội</p>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Giờ Mở Cửa</h4>
+            <div>
+                <h6 class="text-white text-uppercase">Thứ 2 - Chủ Nhật</h6>
+                <p>8.00 AM - 10.00 PM</p>
+                <h6 class="text-white text-uppercase">Ngày Giáng Sinh</h6>
+                <p>6.00 AM - 12.00 PM</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Tin Tức</h4>
+            <p>Đăng kí với email của bạn để nhận thông tin mới nhất từ chúng tôi</p>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary font-weight-bold px-3" onclick="alert('Đăng Ký Thành Công!')">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <!-- <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights Reserved.</a></p> -->
+        <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="">LEGACY Teams</a>.</p>
+    </div>
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!--Login Form-->
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b style="color: #FFFBF2;">Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b style="color: #FFFBF2;">Password</b></label>
+            <input style="background-color: #FFFBF2;" type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit" class="buttondn">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> <b style="color: #FFFBF2;">Remember me</b>
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button style="color: #33211D;" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      
+      <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+ <!--Register Form--> 
+     <div id="id02" class="modal">
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <label for="uname"><b style="color: #FFFBF2;">Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="email"><b style="color: #FFFBF2;">Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b style="color: #FFFBF2;">Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                <label for="psw-repeat"><b style="color: #FFFBF2;">Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"><b style="color: #FFFBF2;">Remember me</b>
+            </label>
+            <div class="container" style="background-color:#f1f1f1">
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+            </div>
+        </form>    
+     </div>
+ <script>
+    // Get the modal
+    var modal = document.getElementById('id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+
+</html>
