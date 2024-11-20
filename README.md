@@ -1,13 +1,12 @@
-# COMP180204
-Nhóm CMT8:
+Nhóm LEGACY:
 
-Nguyễn Thị Vinh
+Nguyễn Hoàng Danh
 
-Nguyễn Lâm Hoàng Yến
+Nguyễn Anh Tuấn
 
-Hồ Quốc Huy
+Đỗ Gia Huy
 
-Nguyễn Thái Dương
+Lê Anh Trọng
 
-Nguyễn Đặng Đại Nam
+Trần Huy Phúc
 
